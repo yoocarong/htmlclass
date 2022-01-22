@@ -10,7 +10,11 @@
 - HTML 표시 내용
 
   - Web Page의 Contents
+    - Text Contents
+    - Multimedia Contents : image, video, audio
   - Web page의 Structure
+
+## HTML Basic
 
 - 기본 구조
 
@@ -28,3 +32,61 @@
   </body>
 </html>
 ```
+
+## HTML Elements
+
+- Tag와 Contents로 구성
+- Tag는 시작태그와 종료태그로 구성
+  - contents와 종료태그 없이 시작태그만 있는 요소 : 빈요소(Empty Element)
+
+```HTML
+<h1>제목</h1>
+
+<br> => 빈 요소(Empty Element)
+```
+
+## HTML Attributes
+
+- HTML Tag의 추가정보
+- syntax : name="value"
+```HTML
+<img src="photo.jpg" alt="사진">
+```
+## Text Contents Element
+
+### Heading
+- 제목
+- h(heading)
+  - h
+### Paragraph
+- p(Paragraph) : 단락
+- hr(Horizontal Rules) : 수평선(단락 구분)
+- br(Line Break) : 강제 줄 바꿈
+  (※ 강제 공백(Entity Code) : &nbsp; - Non-breaking space)
+  (※ & : ampersand)
+  - HTML TEXT 줄바꿈, 공백 인식
+    - 공백 1칸으로 인식
+
+### HTML List
+- 순서없는 목록 : ul, li
+- 순서있는 목록 : ol, li
+- 설명 목록 : dl, dt, dd
+
+※ 포함관계/중첩관계(Nested Element)
+- 포함하는 요소 : 부모요소(Parent), 조상요소(Ancestor)
+- 포함되는 요소 : 자식요소(Child), 자손요소(Descendant)
+- 이웃하는 요소 : 형제요소(sibling)
+
+### HTML Link
+
+- 하이퍼링크 연결
+
+- a(anchor)
+  - href(hypertext reference) attribute : 연결되는 페이지의 주소 정보
+  - target attribute
+    - target="_blank" : 새탭 열기 설정
+  
+- Bookmark 기능
+  - 목적지에 id attribute를 사용해서 이름 지정
+  - a 태그의 href 속성에 "#이름"으로 위치 표시
+  

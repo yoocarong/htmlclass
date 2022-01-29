@@ -109,4 +109,54 @@
 - attribute
   - src(source) : 이미지의 파일 경로, 이름
   - alt(altanative) : 대체 텍스트(이미지가 불러올 수 없을 때 대체하여 표시, 웹 접근성에서 활용)
+  - muted : 음소거
+  - loop : 반복 재생
+  - poster : 영상 포스터(대체) 이미지
+
+## Semantic Element
+
+- 영역을 구분하는 Element를 의미있게 사용하는 것
+
+- header : 로고, 로그인/회원가입, 언어변경
+- nav(navigation) : gnb(global navigation bar), lnb(local navigation bar)
+- section : 웹 페이지의 본문 / 영역 구분
+- article : 웹 페이지의 본분 / 독립된 글(내용)
+- aside : 부수적인 내용 / 광고, 배너
+- footer : 웹 사이트의 위치 정보 / 관련 링크
+- figure : 다이어그램 / 이미지 시각 요소
+- main : 웹 페이지 본문 전체
+
+## URL / File Path
+
+- URL(Uniform Resource Locator)
+```HTML
+http://www.naver.com/video/movie.mp4
+
+=>https://도메인네임/상세경로:포트번호
+
+IP 주소 : Internet Protocol 주소 => 인터넷에서 사용하는 실제 주소
+Ex) 192.168.0.1 : 0~255까지의 숫자 4개로 구성
+
+도메인 네임 : 영어 단어(줄임말)로 구성되어 있는 식별 이름
+
+도메인 네임 서버(시스템) : 도메인 네임 => IP 주소로 변환
+
+```
+
+- 경로(URL/File Path) 지정 방식
+  - root : 해당 경로의 시작 위치
+  - 절대 지정 방식
+    - 파일 경로의 전체 URL을 표현하는 방식
+  - 상대 지정 방식
+    - 현재 페이지를 기준으로 일부 URL을 표현하는 방식
+    - root 상대 경로 방식 : root를 기준으로 상대적인 URL 표현
   
+```HTML
+domain : www.abc.com
+
+/(root) - html - index.html
+        - images - photo.jpg
+절대 방식 : https://www.abc.com/images/photo.jpg
+상대 방식(현재페이지 : index.html) : ../images/photo.jpg
+root 상대 방식 : /images/photo.jpg
+```

@@ -12,6 +12,7 @@
   - Web Page의 Contents
     - Text Contents
     - Multimedia Contents : image, video, audio
+      - Embed(ed) Contents
   - Web page의 Structure
 
 ## HTML Basic
@@ -89,4 +90,23 @@
 - Bookmark 기능
   - 목적지에 id attribute를 사용해서 이름 지정
   - a 태그의 href 속성에 "#이름"으로 위치 표시
+  
+### HTML Table
+- 표를 표시
+- table(표 영역 표시)
+- tr(table row) : 행, 줄
+- th(table heading) : 열, 칸 제목
+- td(table data) : 열, 칸
+※ 향후 웹 접근성 테이블까지 스터디해야함
+※ 웹 개발 시 모바일 환경과 PC환경을 모두 고려해야하는데 테이블은 모바일과 호환되기 어려워서 최근 사용 빈도가 줌, 가로의 크기가 변경되는 환경에서 불편함
+※ html table generator(https://www.tablesgenerator.com/html_tables#)
+
+## Multimedia Contents
+
+### HTML image
+
+- img : image
+- attribute
+  - src(source) : 이미지의 파일 경로, 이름
+  - alt(altanative) : 대체 텍스트(이미지가 불러올 수 없을 때 대체하여 표시, 웹 접근성에서 활용)
   

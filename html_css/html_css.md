@@ -289,3 +289,79 @@ id 선택자
   - id : 100
   - class : 10
   - tag : 1
+
+## CSS Property
+
+- Contents styling
+  - Text Contents
+  - Multimedia Contents
+
+- Structure Styling => layout
+
+## Text Contents Styling
+
+### Text Color : 텍스트 색
+
+- color
+- color name(red), HEX value(#ff0000), RGB value(rgb(255,0,0))
+
+### Text Align : 텍스트 정렬
+
+- text-align
+- left, right, center, justify
+
+### Text Decoration : 텍스트 라인
+
+- Text-decoration
+- overline, line-through, underline, none
+
+### Text Indent : 텍스트 들여쓰기
+
+- text-indent
+- px(픽셀)값으로 지정
+
+### Letter Spacing : 자간
+
+- letter-spacing
+- 양수, 음수 값 모두 사용 가능
+
+### Line Height : 줄 간격(높이)
+
+- line-height
+- px(픽셀)값 지장, 배수값 표현
+
+### White Space : 줄바꿈 지정
+
+- white-space
+- wrap(기본), nowrap
+
+### Font Family : 글꼴 종류
+
+- 고딕체(sans-serif), 명조체(serif)
+- 고딕체 : 본고딕(Noto sans), 나눔바른고딕
+- 웹폰트
+  - 로컬 : woff 폰트 형식 사용
+  - CDN 서비스 : 구글 폰트
+
+### Font Style : 기울임꼴
+
+- font-style
+- italic
+
+### Font Weight : 글꼴 굵기
+
+- font-weight
+- normal, bold
+- 100,200,300,400,500,600,700,800,900
+
+### Font Size : 글꼴 크기
+
+- font-size
+- px(픽셀) 단위 지정
+- 브라우저의 기본크기 : 16px
+
+### List Style
+
+- list-style-type
+- none
+

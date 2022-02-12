@@ -362,6 +362,20 @@ id 선택자
 
 ### List Style
 
-- list-style-type
-- none
+- list-style-type : 목록 기호 스타일 저장
+- none : 목록 기호 삭제
+
+### Table Style
+
+- border-collapse : 테이블 테두리 틈 상태 지정
+- collapse : 틈 합친 상태
+
+### Link Style
+
+- 4가지 상태 구분
+  - a:link : 기본 상태
+  - a:visited : 방문한 상태
+  - a:hover : 마우스 갖다댄 상태
+  - a:active : 마우스 버튼 누른 상태
+
 

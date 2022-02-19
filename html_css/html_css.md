@@ -476,3 +476,114 @@ width:300px, padding:20px(4방향), border:1px(4방향);
 
 
 => inline 요소는 한 문장 등에 적용한다.
+
+
+#### background
+
+- 배경
+  - 배경색
+  - 배경 이미지
+
+- background-corlor : 배경색
+
+- background-image : 배경 이미지
+- background-repeat : 배경 이미지 반복
+- background-position : 배경 이미지 위치
+- background-attachment : 배경 이미지 고정
+
+#### 색, 투명도
+
+- CSS 색 표현
+  - text, border, background
+  - 색 이름(키워드)
+  - 16진수
+  - 10진수
+
+- 색 혼합 방식
+  - CMYK(감산혼합)
+    - Cyan(청록색), Magenta(자주색), Yellow(노란색), Black(key)(검정색)
+  - RGB(가산혼합)
+    - Red, Green, Blue
+
+- 색 개수 표현
+  - 3byte : 1byte(Red), 1byte(Green), 1byte (blue)
+
+|color|Red|Green|Blue|
+|:-----:|:-----:||:-----:|
+|byte|1 byte|1 byte|1 byte|
+|개수|256|256|256|
+|10진수|0~256|0~256|0~256|
+|16진수|0~FF|0~FF|0~FF|
+
+```
+p{
+  color:#0A35FF;
+}
+div{
+  border:1px solid rgb(200,150,255)
+}
+```
+
+- 투명도
+  - opacity
+  - transparent
+  - alpha
+
+- opacity
+  - css 속성
+  - 0 ~ 1 소수점
+
+```
+p{
+  opacity:0.5;
+}
+```
+
+- transparent
+  - css 속성의 값
+
+```
+div{
+  background-color : transparent;
+  border:1px solid transparent;
+}
+```
+
+- alpha
+  - rgba 함수
+  - Red, Green, Blue, Alpha
+
+```
+div{
+  background-color:rgba(200,156,50,0.6);
+}
+```
+
+### Box 배치
+
+#### flex
+
+- display:flex;
+  - 가로 배치
+  - 배치와 관련된 여러가지 제어를 쉽게 할 수 있음
+  - 부모요소에 적용
+
+- 부모요소에 적용하는 flex 관련 style
+  - flex-dirextion
+    - 배치 방향
+    - column, column-reverse, row, row-reverse
+  - flex-wrap
+    - 배치 줄바꿈
+    - wrap, nowrapp(default)
+  - justify-content
+    - 가로 정렬(맞춤) : flex-start, center, flex-end
+    - 간격 : space-around, space-between
+  - align-items
+    - 세로 정렬 : flex-start, center, flex-end
+  - stretch(default) : 세로 길이가 부모 요소에 맞춰서 채워짐(* flex 적용된 박스의 가로길이는 자식요소에 맞춰짐)
+
+## 상속(inherit)
+
+- 부모 요소에 적용된 css style이 자식요소에도 적용되는 현상
+
+
